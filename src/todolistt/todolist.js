@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import NavResp from '../navbar/navbar'
+import './App.css'
 
 export default function Todolist() {
     const [toDo, settoDo]=useState(
@@ -35,14 +37,15 @@ export default function Todolist() {
     
   return (
     <div>
+        <NavResp/><br/><br/><br/>
         ajouter tache:<input type="text" value={newval} onChange={(e)=>changevalue(e) }/> 
-        <input type="button" value="ajouter" onClick={ajouter}/>
+        <input type="button" className="btn btn-success" value="ajouter" onClick={ajouter}/>
         <br/><br/>
         <ul>{
             toDo.map((element,x)=>{
                 let pstyle =  element.completed ? {textDecorationLine:"line-through"} : {textDecorationLine:"none"};
-                return (<li key={x} id={x}><p style={pstyle}>{element.txt}</p><input type='button' onClick={()=>supp(x)} value="supprimer"/>
-                <input type='button' value="toggle" onClick={()=>completelist(x)}/></li>)
+                return (<li key={x} id={x}><p style={pstyle}>{element.txt}</p><input type='button' onClick={()=>supp(x)} className="btn btn-danger" value="supprimer"/>
+                <input type='button' className="btn btn-info" value="toggle" onClick={()=>completelist(x)}/></li>)
             })
         }
         </ul>

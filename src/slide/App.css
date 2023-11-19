@@ -1,9 +1,7 @@
 .App {
   text-align: center;
 }
-body{
-  background-color: black;
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -49,6 +47,7 @@ img{
   position: relative;
   left: -35px;
   top: -150px;
+  background-color: black;
 }
 #btn2{
   width: 30px;
@@ -56,6 +55,7 @@ img{
   position: relative;
   left: -425px;
   top: -150px;
+  background-color: black;
 }
 #cont{
   margin-top: 200px;

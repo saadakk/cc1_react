@@ -4,6 +4,8 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css.css';
+import NavResp from '../navbar/navbar';
+
 
 export default function APIlist(){
     const[data,setData]=useState([])
@@ -36,7 +38,10 @@ export default function APIlist(){
         }
     }
   return (
+    <>
+    <NavResp/><br/>
     <div class="container p-8 my-4 border" style={{textAlign:'center'}}>
+        
         <h1 style={{color:'red' }}>Pagination</h1 >
         <ul>
             {console.log(data.length)}
@@ -48,5 +53,6 @@ export default function APIlist(){
         
         <input type='button' value='next' onClick={next} class="btn btn-primary"/>
     </div>
+    </>
   )
 }

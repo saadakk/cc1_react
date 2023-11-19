@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
-import image1 from "./image/image1.jpg"
-import image2 from "./image/image2.jpg"
-import image3 from "./image/image3.jpg"
-import image4 from "./image/image4.jpg"
-import image5 from "./image/image5.jpg"
-import icon from'./image/icone.png'
+import image1 from "../image/image1.jpg"
+import image2 from "../image/image2.jpg"
+import image3 from "../image/image3.jpg"
+import image4 from "../image/image4.jpg"
+import image5 from "../image/image5.jpg"
+import icon from'../image/icone.png'
+import './App.css'
+import NavResp from '../navbar/navbar'
+
 
 
 export default function Compimg () {
@@ -25,7 +28,9 @@ export default function Compimg () {
       }
     }
   return (
+
     <div id='cont'>
+        <NavResp/>
          <h1 id='hh1'>  {incDec+1}</h1>
          <img src={tableImages[incDec]}/>
           

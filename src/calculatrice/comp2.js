@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './calc.css';
+import NavResp from '../navbar/navbar';
 
 export default function Comp2() {
     const [result,setresult] = useState("")
@@ -38,7 +39,7 @@ export default function Comp2() {
     
   return (
     <div id='ch1'>
- 
+        <NavResp/>
      <div id='all' > 
      <p>CASIO</p>    
     <input id='in1'  type="text" value={result}/><br/>

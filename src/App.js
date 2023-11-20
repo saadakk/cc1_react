@@ -6,15 +6,17 @@ import Todolist from './todolistt/todolist'
 import Home from './home/home'
 import Lang from './multilang/multiL'
 import Context from './context'
+import NavResp from './navbar/navbar'
 
 
 function App() {
   
   return (
     <div className="App">
+      
       <Context>
-      <BrowserRouter>
-        <Routes>
+      <BrowserRouter basename='cc1-react'>
+        <Routes>   
           <Route path='/calculatrice' element={<Comp2/>}/>
           <Route path='/slide' element={<Compimg/>}/>
           <Route path='/todolist' element={<Todolist/>}/>

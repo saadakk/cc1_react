@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <>
-    <NavResp/><br/>
+    <NavResp/><br/><br/><br/>
     <h1>welcome</h1>
     </>
   )

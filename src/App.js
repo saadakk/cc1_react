@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       
       <Context>
-      <BrowserRouter basename='cc1-react'>
+      <BrowserRouter basename='cc1_react'>
         <Routes>   
           <Route path='/calculatrice' element={<Comp2/>}/>
           <Route path='/slide' element={<Compimg/>}/>

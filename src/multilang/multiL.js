@@ -6,7 +6,7 @@ export default function Lang() {
     let langs = {
         "FR":'salut et bienvenue dans le site',
         "EN":"hello , welcome to my world",
-        "ES":"muchas gracias afficion es nos otros SUUUIIIIIIIIIII"
+        "ES":"Hola, bienvenido a mi mundo"
     }
   return (
     <div>
